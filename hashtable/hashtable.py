@@ -37,6 +37,7 @@ class HashTable:
         Implement this.
         """
         # Your code here
+        pass
 
     def get_load_factor(self):
         """
@@ -45,6 +46,7 @@ class HashTable:
         Implement this.
         """
         # Your code here
+        pass
 
     def fnv1(self, key):
         """
@@ -54,6 +56,7 @@ class HashTable:
         """
 
         # Your code here
+        pass
 
     def djb2(self, key):
         """
@@ -62,6 +65,10 @@ class HashTable:
         Implement this, and/or FNV-1.
         """
         # Your code here
+        hash = 5381
+        for c in key:
+            hash = (hash * 33) + ord(c)
+        return hash
 
     def hash_index(self, key):
         """
@@ -79,7 +86,9 @@ class HashTable:
 
         Implement this.
         """
-        # Your code here
+        get_index = self.hash_index(key)
+        update_entry = HashTableEntry(key, value)
+        self.data[get_index] = update_entry
 
     def delete(self, key):
         """
@@ -89,7 +98,8 @@ class HashTable:
 
         Implement this.
         """
-        # Your code here
+        get_index = self.hash_index(key)
+        self.data[get_index].value = None
 
     def get(self, key):
         """
@@ -99,7 +109,8 @@ class HashTable:
 
         Implement this.
         """
-        # Your code here
+        get_index = self.hash_index(key)
+        return self.data[get_index].value
 
     def resize(self, new_capacity):
         """
@@ -109,6 +120,7 @@ class HashTable:
         Implement this.
         """
         # Your code here
+        pass
 
 
 if __name__ == "__main__":

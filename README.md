@@ -4,21 +4,21 @@
 
 Task: Implement a basic hash table without collision resolution.
 
-1. Implement a `HashTable` class and `HashTableEntry` class.
+1. [x] - Implement a `HashTable` class and `HashTableEntry` class.
 
-2. Implement a good hashing function.
+2. [x] - Implement a good hashing function.
 
    Recommend either of:
 
-   * DJB2
-   * FNV-1 (64-bit)
+   - DJB2
+   - FNV-1 (64-bit)
 
    You are allowed to Google for these hashing functions and implement
    from psuedocode.
 
-3. Implement the `hash_index()` that returns an index value for a key.
+3. [x] - Implement the `hash_index()` that returns an index value for a key.
 
-4. Implement the `put()`, `get()`, and `delete()` methods.
+4. [x] - Implement the `put()`, `get()`, and `delete()` methods.
 
 You can test this with:
 
@@ -73,12 +73,11 @@ For these, you can use either the built-in `dict` type, or the hashtable
 you built. (Some of these are easier with `dict` since it's more
 full-featured.)
 
-* [Lookup Table](applications/lookup_table/)
-* [Expensive Sequence](applications/expensive_seq/)
-* [Word Count](applications/word_count/)
-* [No Duplicates](applications/no_dups/)
-* [Markov Chains](applications/markov/)
-* [Histogram](applications/histo/)
-* [Cracking Caesar Ciphers](applications/crack_caesar/)
-* [Sum and Difference](applications/sumdiff/)
-
+- [Lookup Table](applications/lookup_table/)
+- [Expensive Sequence](applications/expensive_seq/)
+- [Word Count](applications/word_count/)
+- [No Duplicates](applications/no_dups/)
+- [Markov Chains](applications/markov/)
+- [Histogram](applications/histo/)
+- [Cracking Caesar Ciphers](applications/crack_caesar/)
+- [Sum and Difference](applications/sumdiff/)
